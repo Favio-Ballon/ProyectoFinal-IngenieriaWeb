@@ -1,0 +1,269 @@
+header {
+    background-color: #3a5f6f; 
+    padding: 10px 0;
+    color: #dad5b7; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+
+.logo{
+    font-size: 20px;
+    margin-left: 5px;
+    font-family: 'Nexa', sans-serif;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-mobile-label i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #243757;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    border-bottom: 1px solid #3a5f6f;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 20px;
+    color: #dad5b7;
+    text-decoration: none;
+}
+
+.menu input[type="checkbox"] {
+    display: none;
+}
+
+.menu input[type="checkbox"]:checked + ul {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.menu input[type="checkbox"]:checked + ul li:nth-child(3) {
+    display: none;
+}
+
+
+.search-bar {
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+.menu li a {
+    color: #dad5b7;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.menu li a:hover {
+    background-color: #c2b79b; 
+    color: #243757; 
+    border-radius: 0;
+}
+
+.menu li ul li{
+    padding: 0;
+}
+
+.menu li ul li a{
+    padding: 20px;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown .dropdown-content{
+    display: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    background-color: #243757;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+@media (min-width: 768px){
+    .logo {
+        font-size: 24px;
+    }
+
+    .search-bar {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+
+    .menu-mobile-label {
+        display: none; 
+    }
+
+    .menu ul {
+        display: flex; 
+        position: static;
+        flex-direction: row;
+        justify-content: space-around;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .menu ul li {
+        display: inline;
+        width: auto;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .menu ul li a {
+        padding: 10px 15px;
+    }
+
+    .menu input[type="checkbox"]:checked + ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu input[type="checkbox"]:checked + ul li:nth-child(3) {
+        display: block;
+    }
+
+    .menu li ul li a{
+        padding: 10px;
+    }
+
+    .menu li a.btn{
+        border-radius: 10px;
+
+    }
+
+
+    .menu li:first-child a{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .menu li:first-child ul li a{
+        border-radius: 0;
+    }
+    
+    .menu li ul li:last-child a, .menu li ul{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    
+}
+
+
+@media (min-width: 992px) {
+
+    header {
+        padding: 15px 30px; 
+    }
+
+    .logo {
+        font-size: 28px; 
+    }
+
+    .search-bar {
+        margin-left: 30px;
+        margin-right: 50px; 
+        flex: 2; 
+    }
+
+    .search-bar input[type="text"] {
+        font-size: 1.1rem; 
+    }
+
+    /* Menú */
+    .menu {
+        margin-right: 30px; 
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin-left: 30px; 
+    }
+
+    .menu li a {
+        padding: 10px 15px;
+    }
+
+    .menu input[type="checkbox"]:checked + ul {
+        display: flex;
+    }
+
+    .menu input[type="checkbox"]:checked + ul li:nth-child(3) {
+        display: block;
+    }
+
+
+
+    .dropdown:hover .dropdown-content{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .dropdown:hover .dropdown-content li{
+       border-radius: 0;
+       margin: 0;
+    }
+
+
+
+    .menu li ul a:hover {
+        border-radius: 0;
+    }
+
+    .menu li ul li:last-child a:hover {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+}

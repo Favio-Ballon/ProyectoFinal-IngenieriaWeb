@@ -1,0 +1,23 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dad5b7; 
+    color: #243757; 
+    font-family: 'Poppins', sans-serif;
+}
+
+#titulo_link{
+    color: unset;
+    text-decoration: none;
+    margin: 0;
+}
+
+
+
+.color1 { color: #243757;}
+.color2 { color: #3a5f6f;}
+.color3 { color: #dad5b7;}
+.color4 { color: #dad5b7;}
+.color5 { color: #665e52;}

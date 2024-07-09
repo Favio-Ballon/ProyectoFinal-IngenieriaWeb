@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragon</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body style="display: none;">
+    <header>
+        <a href="index.html" id="titulo_link"><h1 class="logo">Paragon</h1></a>
+        <form id="searchForm" class="search-bar">
+            <input id="searchInput" type="text" placeholder="Buscar cursos..." >
+        </form>
+        <nav class="menu">
+            <label class="menu-mobile-label" for="menu-switch">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input id="menu-switch" type="checkbox">
+            <ul id="header_items">
+                <li class="dropdown">
+                    <a id="categoria"><i class="fas fa-angle-down"></i> Categorías</a>
+                    <ul class="dropdown-content">
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="banner_img">
+            <img src="img/banner1.png" alt="banner 1">
+            <img src="img/banner1.png" alt="banner 2">
+            <img src="img/banner3.png" alt="banner 3">
+        </div>
+    </section>
+
+    <section class="cursos">
+        <h2>Cursos populares</h2>
+        <div class="cursos_item" id="firstCurso">
+            <div>
+                <img id="cursos_item_img" src="img/curso1.png" alt="curso 1">
+            </div>
+            <div>
+                <h3 id="cursos_item_title">Programación desde Cero</h3>
+                <p id="cursos_item_text">Este curso está diseñado para personas sin experiencia previa en programación. El objetivo es
+                    proporcionar una base sólida en los conceptos fundamentales de la programación.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="cursos_item" id="secondCurso">
+            <div>
+                <img class="cursos_item_img" src="img/curso1.png" alt="curso 1">
+            </div>
+            <div>
+                <h3 class="cursos_item_title">Programación desde Cero</h3>
+                <p class="cursos_item_text">Este curso está diseñado para personas sin experiencia previa en programación. El objetivo es
+                    proporcionar una base sólida en los conceptos fundamentales de la programación.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Paragon. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

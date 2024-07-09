@@ -1,0 +1,237 @@
+.course-container {
+    background-color: #dad5b7;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.course-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-header img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.course-details {
+    margin-top: 20px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.course-title {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    color: #243757;
+
+}
+
+.course-description {
+    margin: 0 0 10px 0;
+}
+
+.course-author {
+    font-weight: bold;
+    color: #665e52;
+}
+
+.course-container hr {
+    border: 1px solid #3a5f6f;
+}
+
+.course-lessons {
+    margin-top: 20px;
+    border: solid 1px #3a5f6f;
+}
+
+.lesson {
+    cursor: pointer;
+    padding: 15px;
+    border-bottom: 1px solid #243757;
+    background-color: #3a5f6f;
+    color: #c2b79b;
+}
+
+.course-lessons i{
+    padding-right: 10px;
+
+}
+.lesson:last-child {
+    border-bottom: none;
+}
+
+
+
+.lesson-video, .lesson-text{
+    display: none;
+    margin-top: 10px;
+}
+
+.course-details div button{
+
+    background-color: #3a5f6f;
+    color: #c2b79b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+
+
+.lesson_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+.lesson_items h4{
+    align-self: unset;
+    margin: 0;
+}
+
+.lesson_items button{
+    background-color: #c2b79b;
+    color: #243757;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0;
+}
+
+#lecciones_titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#lecciones_titulo h2{
+    text-align: center;
+}
+
+
+#lecciones_titulo button{
+    align-self: center;
+    width: 50%;
+    background-color: #3a5f6f;
+    color: #c2b79b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+.lesson-text{
+    overflow-wrap: break-word;
+    background-color: white;
+    color:  #243757;
+    border-radius: 2px;
+    padding: 1em;
+
+}
+
+.lessons_btn{
+    display: flex;
+    flex-direction: column; 
+    align-self: center;
+}
+
+.lessons_btn button:first-child{
+    margin-bottom: 5px;
+}
+
+
+
+@media(min-width: 768px){
+    #lecciones_titulo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #lecciones_titulo button{
+        width: unset;
+    }
+
+    .lessons_btn{
+        flex-direction: row;
+    }
+
+    .lessons_btn button:first-child{
+        margin-bottom: 0;
+    }
+
+    .lessons_btn button:last-child{
+        margin-left: 10px;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .course-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: unset;
+        width: 100%;
+    }
+
+    .course-final{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .course-header img {
+        max-width: 50%;
+        border-radius: 10px;
+        max-height: 300px;
+    }
+
+    .course-details {
+        margin-left: 20px;
+        margin-top: 20px;
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .course-details div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }   
+
+    .lesson_items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+
+    .lesson_items h4{
+        align-self: unset;
+        margin: 0;
+    }
+
+
+
+    
+
+
+}   

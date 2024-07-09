@@ -1,0 +1,170 @@
+.cursos {
+    padding: 30px 20px;
+    background-color: #dad5b7;
+    text-align: center;
+}
+
+
+.cursos h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+
+.cursos_item {
+    display: flex;
+    flex-direction: column;
+    background-color: #c2b79b;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cursos_item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 200px;
+}
+
+.cursos_item div:last-child {
+    padding: 20px;
+    text-align: left;
+}
+
+.cursos_item h3 {
+    color: #243757;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.cursos_item p {
+    color: #665e52;
+    line-height: 1.5;
+}
+
+
+.cursos hr {
+    display: none;
+}
+
+.cursos .btn {
+
+    background-color: #3a5f6f;
+    color: #c2b79b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cursos_item_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+@media (min-width: 768px) {
+    .cursos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cursos_item img {
+        max-height: unset;
+    }
+
+
+
+    .cursos_item {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        max-height: 300px;
+    }
+
+    .cursos img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    
+
+    .cursos_item div:first-child {
+        width: 40%;
+    }
+
+    .cursos_item div:last-child {
+        padding: 0px 20px;
+        width: 60%;
+        padding-right: 0;
+    }
+
+    .cursos_item div:last-child div {
+        padding: 0;
+        align-self: end;
+    }
+
+    .curso_botones{
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+
+    #cursos_item_details p{
+        margin: 0;
+    }
+
+    #cursos_item_details{
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    
+    #cursos_item_details p{
+        margin: 10px 0;
+    }
+
+    .cursos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    .cursos h2 {
+        width: 100%;
+    }
+
+    .cursos_item {
+        width: 100%;
+        max-height: 280px;
+    }
+
+    .cursos_item div:first-child {
+        width: 40%;
+    }
+
+    .cursos_item div:last-child {
+        padding: 5px 20px;
+        width: 60%;
+    }
+
+
+    .cursos_item div img {
+        object-fit: cover;
+    }
+
+    section.cursos {
+        width: 70%;
+    }
+}

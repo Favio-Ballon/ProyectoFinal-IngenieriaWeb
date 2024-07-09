@@ -1,0 +1,132 @@
+.crearCursos {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #dad5b7; 
+    color: #243757; 
+    padding: 1em;
+}
+
+.crearCursos form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.crearCursos h1 {
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+    color: #243757;
+}
+
+.crearCursos form div:not(#edit-view, #edit-view div, #btn-leccion){
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.crearCursos form div input, .crearCursos form div textarea {
+    width: 60%;
+    padding: 0.5em;
+    border: 1px solid #665e52; 
+    border-radius: 5px;
+    background-color: #ffffff; 
+    color: #243757; 
+}
+
+.crearCursos form div input:focus, .crearCursos form div textarea:focus {
+    outline: none;
+    border-color: #3a5f6f;
+}   
+
+
+#btn-leccion{
+    display: flex;
+    margin-top: 30px;
+    justify-content: end;
+}
+
+.crearCursos div button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.crearCursos div button.btn {
+    background-color: #3a5f6f; 
+    color: #ffffff; 
+}
+
+.crearCursos div button.btn:last-child {
+    background-color: #665e52; 
+    color: #ffffff; 
+    margin-left: 1rem;
+
+}
+
+.crearCursos div button:hover {
+    opacity: 0.8;
+}
+
+#crear_curso_imagen input{
+    background-color: unset;
+    border: unset;
+}
+
+
+.crearCursos form div textarea {
+    padding-bottom: 30%;
+}
+
+.crearCursos div:nth-child(4) input#imagen {
+    padding: 0;
+}
+
+.crearCursos div input#imagen::placeholder {
+    color: #243757; 
+}
+
+#validation-titulo, #validation-descripcion, #validation-imagen, #validation-autor, #validation-contenido{
+    align-self: center;
+    color: red;
+    margin-top: 0;
+    display: none;
+}
+
+#leccion-tipo{
+    width: 70%;
+}
+
+#edit-view{
+    width: 90%;
+    background-color: white;
+    padding: 1em;
+    border: 1px solid #665e52; 
+    border-radius: 5px;
+    color: #243757; 
+    margin: 0 auto;
+}
+
+#editorjs{
+   width: 100%;
+}
+
+
+
+
+@media (min-width: 992px) {
+
+    .crearCursos {
+        width: 50%;
+    }
+
+    #edit-view{
+        width: 100%;
+    }
+
+}
+

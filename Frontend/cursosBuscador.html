@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/cursosBuscador.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body style="display: none;">
+    <header>
+        <a href="index.html" id="titulo_link">
+            <h1 class="logo">Paragon</h1>
+        </a>
+        <form id="searchForm" class="search-bar">
+            <input id="searchInput" type="text" placeholder="Buscar cursos...">
+        </form>
+        <nav class="menu">
+            <label class="menu-mobile-label" for="menu-switch">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input id="menu-switch" type="checkbox">
+            <ul id="header_items">
+                <li class="dropdown">
+                    <a><i class="fas fa-angle-down"></i> Categorías</a>
+                    <ul class="dropdown-content">
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cursos">
+        <div id="cursos_titulo">
+            <h2>Resultados para "busqueda"</h2>
+        </div>
+    </section>
+
+
+    <script src="js/cursosAdmin.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/cursosBuscador.js"></script>
+</body>
+
+</html>
